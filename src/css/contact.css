@@ -1,6 +1,6 @@
 .contact {
   max-width: 1420px;
-  padding: 40px;
+  padding: 40px 40px 140px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -10,7 +10,7 @@
   max-width: 660px;
   width: 100%;
   padding: 90px 40px;
-  background: #5151511A;
+  background: #5151511a;
   border-radius: 20px;
 }
 .contacts-info-top.form {
@@ -27,7 +27,7 @@
   flex-direction: column;
   gap: 40px;
 }
-.contacts-info-main-links{
+.contacts-info-main-links {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -49,5 +49,47 @@
   width: 100%;
   padding: 20px;
   border-radius: 20px;
-  border: 1px solid #51515133
+  border: 1px solid #51515133;
+}
+
+.forms-row {
+  display: flex;
+  justify-content: space-between;
+}
+.form-container.double {
+  max-width: 290px;
+  width: 100%;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.form {
+  width: 100%;
+  border: 1px solid #51515133;
+  background: #5151510d;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.form-submit-button{
+  background: #861A0E;
+  border-radius: 10px;
+  padding: 15px;
+  color: #FAFAFA;
+}
+
+.margin-top{
+  margin-top: 20px;
 }
