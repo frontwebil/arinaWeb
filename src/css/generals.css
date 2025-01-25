@@ -24,6 +24,11 @@
   color: #020202;
 }
 
+.text-sm {
+  font-size: 24px;
+  color: #020202;
+}
+
 .text-m{
   font-size: 26px;
   color: #020202;
@@ -42,6 +47,11 @@
 
 .lightGray{
   color: #CACACA;
+}
+
+.title{
+  font-size: 46px;
+  font-weight: 700;
 }
 
 .sections-title {

@@ -8,6 +8,7 @@
 @import url(portfolio.css);
 @import url(slider.css);
 @import url(services.css);
+@import url(contact.css);
 
 * {
   font-family: "Montserrat", serif;
