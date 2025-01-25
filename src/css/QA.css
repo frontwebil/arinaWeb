@@ -1,0 +1,78 @@
+.QA {
+  max-width: 1420px;
+  padding: 40px;
+  margin: 0 auto;
+}
+.QA-container {
+  background: #2E2E2E;
+  border-radius: 20px;
+  padding: 40px;
+}
+
+.icon {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.icon span {
+  position: absolute;
+  background-color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.horizontal {
+  width: 22px;
+  height: 3px;
+  border-radius: 5px;
+}
+
+.vertical {
+  width: 3px;
+  height: 22px;
+  border-radius: 5px;
+}
+
+/* Анимация превращения в минус */
+.icon.active .vertical {
+  transform: rotate(90deg);
+}
+
+.icon.active .horizontal {
+  transform: rotate(0deg);
+}
+
+.accordeon{
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.accordeon-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.accordeon-item {
+  max-width: 620px;
+  width: 100%;
+  background: #51515133;
+  border-radius: 20px;
+  padding: 15px 20px;
+}
+.accordeon-item-top-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordeon-content{
+  /* padding-top: 10px; */
+  overflow: hidden;
+  max-height: 0;
+}

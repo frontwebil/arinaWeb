@@ -11,6 +11,7 @@
 @import url(contact.css);
 @import url(footer.css);
 @import url(testimonials.css);
+@import url(QA.css);
 
 * {
   font-family: "Montserrat", serif;
