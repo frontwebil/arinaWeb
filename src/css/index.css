@@ -1,0 +1,19 @@
+@import url(reset.css);
+@import url(header.css);
+@import url(generals.css);
+@import url(hero.css);
+@import url(statistics.css);
+@import url(advantages.css);
+@import url(stages.css);
+@import url(portfolio.css);
+@import url(slider.css);
+@import url(services.css);
+
+* {
+  font-family: "Montserrat", serif;
+  transition: 0.3s all ease;
+}
+
+body{
+  background-color: #FAFAFA;
+}

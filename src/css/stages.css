@@ -1,0 +1,47 @@
+.stages {
+  max-width: 1340px;
+  margin: 0 auto;
+  padding: 100px 20px 100px;
+}
+.stages-container {
+  background: #2e2e2e;
+  padding: 40px;
+  border-radius: 20px;
+}
+.stages-container-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.stages-titles {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #fafafa;
+}
+.stage-title {
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 56.07px;
+  text-transform: uppercase;
+}
+.stage-subtitle {
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 31.69px;
+}
+
+.stages-blocks {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+.stages-block {
+  max-width: 290px;
+  margin-top: 40px;
+}
+.stages-block-top {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+}

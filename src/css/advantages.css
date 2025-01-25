@@ -1,0 +1,25 @@
+.advantages {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 100px 20px 100px;
+}
+
+.advantages-blocks {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.advantages-block {
+  max-width: 420px;
+  border: 1px solid #0202021A;
+  padding: 20px;
+  border-radius: 20px;  
+}
+.advantages-block-top {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
