@@ -55,6 +55,7 @@
 .forms-row {
   display: flex;
   justify-content: space-between;
+  gap: 20px;
 }
 .form-container.double {
   max-width: 290px;
