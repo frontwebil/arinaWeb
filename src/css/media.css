@@ -414,6 +414,9 @@
 }
 
 @media only screen and (max-width: 450px) {
+  .sliding-menu {
+    top: 81px;
+  }
   .header-logo {
     width: 80px;
     height: 40px;

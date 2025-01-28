@@ -532,15 +532,28 @@ AccordeonTopButton.forEach((el) => {
 
     if (content.style.maxHeight) {
       content.style.maxHeight = null;
-      content.style.paddingTop = '0px'
+      content.style.paddingTop = "0px";
     } else {
-      content.style.paddingTop = '10px'
+      content.style.paddingTop = "10px";
       content.style.maxHeight = content.scrollHeight + 10 + "px";
     }
   });
 });
 
+document.querySelector(".custom-burger").addEventListener("click", function () {
+  this.classList.toggle("active");
+});
 
-document.querySelector('.custom-burger').addEventListener('click', function () {
-  this.classList.toggle('active');
+document.addEventListener("DOMContentLoaded", function () {
+  const burger = document.querySelector(".custom-burger");
+  const menu = document.querySelector(".sliding-menu");
+
+  burger.addEventListener("click", function () {
+    burger.classList.toggle("active");
+    menu.classList.toggle("active");
+
+    document.body.style.overflow = menu.classList.contains("active")
+      ? "hidden"
+      : "";
+  });
 });
