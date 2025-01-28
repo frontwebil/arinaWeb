@@ -582,3 +582,33 @@ document.addEventListener("DOMContentLoaded", function () {
       : "";
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const elements = document.querySelectorAll(".animate");
+  elements.forEach((el) => {
+    setTimeout(() => el.classList.add("active"), 200);
+  });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const blocksContainer = document.querySelector(".advantages-blocks");
+  const blocks = document.querySelectorAll(".advantages-block");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          blocks.forEach((block, index) => {
+            setTimeout(() => {
+              block.classList.add("show");
+            }, index * 300); // затримка 200 мс між блоками
+          });
+          observer.unobserve(blocksContainer); // після першого появи блоку вимкнути спостереження
+        }
+      });
+    },
+    { threshold: 0.2 } // Відсоток появи блоку для спрацювання
+  );
+
+  observer.observe(blocksContainer);
+});

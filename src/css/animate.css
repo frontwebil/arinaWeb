@@ -1,0 +1,25 @@
+/* Базові стилі для анімації */
+.animate {
+  opacity: 0; /* Початкова прозорість */
+  transition: all 0.5s ease; /* Плавність переходу */
+}
+
+.fadeIn-left {
+  transform: translateX(-20px); /* Зміщення вліво */
+}
+
+.fadeIn-right {
+  transform: translateX(20px); /* Зміщення вправо */
+}
+
+.animate.active {
+  opacity: 1; /* Робимо елементи видимими */
+  transform: translateX(0); /* Повертаємо до початкової позиції */
+}
+/* Затримка */
+.delay-1s { transition-delay: 0.5s; }
+.delay-2s { transition-delay: 1s; }
+.delay-3s { transition-delay: 1.5s; }
+.delay-4s { transition-delay: 2s; }
+.delay-5s { transition-delay: 2.5s; }
+.delay-6s { transition-delay: 3s; }

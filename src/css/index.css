@@ -13,6 +13,7 @@
 @import url(testimonials.css);
 @import url(QA.css);
 @import url(media.css);
+@import url(animate.css);
 
 * {
   font-family: "Montserrat", serif;
