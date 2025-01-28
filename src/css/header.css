@@ -4,7 +4,7 @@
   width: 100%;
   border-bottom: 1px solid #51515133;
   background: #FAFAFA;
-  z-index: 5;
+  z-index: 3;
 }
 .header-container {
   max-width: 1340px;
@@ -54,4 +54,35 @@
 
 .header-button:hover {
   opacity: 0.6;
+}
+
+.custom-burger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.custom-line {
+  height: 3px;
+  background-color: black;
+  border-radius: 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+.custom-burger.active .custom-line:nth-child(1) {
+  /* width: 35px; */
+  transform: translateY(12px) rotate(45deg);
+}
+
+.custom-burger.active .custom-line:nth-child(2) {
+  opacity: 0;
+}
+
+.custom-burger.active .custom-line:nth-child(3) {
+  /* width: 35px; */
+  transform: translateY(-9px) rotate(-45deg);
 }

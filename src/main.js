@@ -539,3 +539,8 @@ AccordeonTopButton.forEach((el) => {
     }
   });
 });
+
+
+document.querySelector('.custom-burger').addEventListener('click', function () {
+  this.classList.toggle('active');
+});
