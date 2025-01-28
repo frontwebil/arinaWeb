@@ -540,10 +540,6 @@ AccordeonTopButton.forEach((el) => {
   });
 });
 
-document.querySelector(".custom-burger").addEventListener("click", function () {
-  this.classList.toggle("active");
-});
-
 document.addEventListener("DOMContentLoaded", function () {
   const burger = document.querySelector(".custom-burger");
   const menu = document.querySelector(".sliding-menu");

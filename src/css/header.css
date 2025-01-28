@@ -62,7 +62,7 @@
   flex-direction: column;
   justify-content: space-between;
   width: 30px;
-  height: 25px;
+  height: 22px;
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
 }
@@ -75,8 +75,8 @@
 }
 
 .custom-burger.active .custom-line:nth-child(1) {
-  width: 33px;
-  transform: translateY(12px) rotate(45deg);
+  width: 30px;
+  transform: translateY(10px) rotate(45deg);
 }
 
 .custom-burger.active .custom-line:nth-child(2) {
@@ -84,7 +84,7 @@
 }
 
 .custom-burger.active .custom-line:nth-child(3) {
-  width: 33px;
+  width: 30px;
   transform: translateY(-9px) rotate(-45deg);
 }
 
@@ -141,6 +141,7 @@
 
 .sliding-menu-social {
   display: flex;
+  justify-content: space-between;
   gap: 24px;
   margin-top: 50px;
   padding-top: 25px;
@@ -148,11 +149,16 @@
 }
 
 .sliding-menu-social a {
-  width: 24px;
-  height: 24px;
+  width: 40px;
+  height: 40px;
 }
 
 /* Modify your existing burger styles */
 .custom-line {
   width: 100%;
+}
+
+.header-icon{
+  width: 40px;
+  height: 40px;
 }
