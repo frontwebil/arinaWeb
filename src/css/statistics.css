@@ -39,3 +39,9 @@
   justify-content: center;
   gap: 20px;
 }
+
+  .statistics-block div {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }

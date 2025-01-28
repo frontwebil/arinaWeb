@@ -256,6 +256,15 @@
   }
 }
 @media only screen and (max-width: 900px) {
+  .sections-title {
+    gap: 0;
+  }
+  .stages-titles {
+    padding-bottom: 30px;
+  }
+  .accordeon {
+    margin-top: 0px;
+  }
   .header-logo {
     width: 100px;
   }
@@ -308,6 +317,15 @@
   }
 }
 @media only screen and (max-width: 665px) {
+  .statistics-block div {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+  }
+  .statistics-block {
+    max-width: 660px;
+  }
+
   .mobile-hero {
     display: block;
   }
@@ -342,6 +360,7 @@
     font-weight: 600;
     line-height: 26.82px;
     color: #020202;
+    padding-bottom: 5px;
   }
   .statistics-flex-box {
     display: flex;
@@ -365,6 +384,7 @@
     font-size: 38px;
   }
   .subTitleSections {
+    padding-top: 7px;
     font-size: 20px;
     line-height: 19px;
   }

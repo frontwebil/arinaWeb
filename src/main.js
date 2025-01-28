@@ -146,12 +146,22 @@ function initPortfolioSlider() {
     if (currentSlideIndexPortfolio < totalSlides - 1) {
       currentSlideIndexPortfolio++;
       updateSlides();
+    } else if (currentSlideIndexPortfolio === totalSlides - 1) {
+      currentSlideIndexPortfolio = 0;
+      updateSlides();
     }
   }
 
   function prevSlide() {
+    const filteredProjects = portfolioData.filter((project) => project.title);
+    const totalSlides = Math.ceil(
+      filteredProjects.length / SLIDES_PER_PAGE_PORTFOLIO
+    );
     if (currentSlideIndexPortfolio > 0) {
       currentSlideIndexPortfolio--;
+      updateSlides();
+    } else if (currentSlideIndexPortfolio === 0) {
+      currentSlideIndexPortfolio = totalSlides - 1;
       updateSlides();
     }
   }
@@ -501,8 +511,12 @@ function init() {
   }
 
   prevButton.addEventListener("click", () => {
+    const totalSlides = Math.ceil(reviews.length / SLIDES_PER_PAGE);
     if (currentSlide > 0) {
       currentSlide--;
+      updateSlides();
+    }else if (currentSlide === 0) {
+      currentSlide = totalSlides - 1;
       updateSlides();
     }
   });
@@ -511,6 +525,9 @@ function init() {
     const totalSlides = Math.ceil(reviews.length / SLIDES_PER_PAGE);
     if (currentSlide < totalSlides - 1) {
       currentSlide++;
+      updateSlides();
+    } else if (currentSlide === totalSlides - 1) {
+      currentSlide = 0;
       updateSlides();
     }
   });

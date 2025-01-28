@@ -6,10 +6,10 @@
   gap: 20px;
   justify-content: space-between;
 }
-.mobile-hero{
+.mobile-hero {
   display: none;
 }
-.uniq{
+.uniq {
   width: 310px;
   height: 200px;
   background-image: url(/images/hero/uniqueness.png);
@@ -17,7 +17,7 @@
   background-repeat: no-repeat;
 }
 
-.interface{
+.interface {
   width: 260px;
   height: 270px;
   background-image: url(/images/hero/interface.png);
@@ -70,6 +70,12 @@
 .disc {
   color: #fafafa;
   background: #861a0e;
+  border: 3px solid #861a0e;
+}
+
+.disc:hover {
+  background: #fafafa;
+  color: #861a0e;
 }
 
 .learnMore {
@@ -78,8 +84,14 @@
   align-items: center;
   gap: 10px;
   color: #020202;
-  border: 2px solid #020202;
+  border: 3px solid #020202;
 }
+
+.learnMore:hover {
+  background-color: #d8d8d8;
+  border: 3px solid #d8d8d8;
+}
+
 
 .hero-images {
   max-width: 530px;
