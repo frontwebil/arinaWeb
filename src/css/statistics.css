@@ -33,3 +33,9 @@
   background-color: #861a0e;
   margin-top: 10px;
 }
+
+.statistics-flex-box{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}

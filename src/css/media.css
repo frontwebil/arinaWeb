@@ -1,4 +1,73 @@
+@media only screen and (max-width: 1235px) {
+  .hero-images-flex {
+    max-width: 500px;
+    display: flex;
+    gap: 10px;
+  }
+
+  .interface {
+    width: 220px;
+    height: 225px;
+    /* background-image: url(/images/hero/interface-mobile.png); */
+  }
+  .hero-images-flex-block {
+    font-size: 20px;
+    color: #fafafa;
+    padding: 20px;
+    border-radius: 20px;
+    background: #020202;
+  }
+  .hero-text-top {
+    font-size: 24px;
+    color: #515151;
+    padding-bottom: 12px;
+  }
+  .hero-button {
+    align-content: center;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 29.26px;
+    border-radius: 10px;
+  }
+  .hero-buttons {
+    margin-top: 40px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+
+  .uniq {
+    width: 270px;
+    height: 170px;
+    /* background-image: url(/images/hero/uniqueness-block.png); */
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .hero-title {
+    font-size: 56px;
+  }
+  .hero-subtitle {
+    text-transform: uppercase;
+    font-size: 28px;
+    line-height: 35px;
+  }
+  .hero-text-info {
+    padding-top: 20px;
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .header-container-row {
+    max-width: 810px;
+  }
+}
 @media only screen and (max-width: 1140px) {
+  .header-container-row img {
+    max-width: 100px;
+  }
+  .header-container-row {
+    max-width: 690px;
+  }
   .services-tabs-content-top-block {
     max-width: 340px;
     width: 100%;
@@ -89,6 +158,29 @@
   }
 }
 @media only screen and (max-width: 1000px) {
+  .header-button {
+    gap: 10px;
+    padding: 12px 15px;
+  }
+
+  .uniq {
+    width: 235px;
+    height: 156px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .interface {
+    width: 185px;
+    height: 200px;
+    /* background-image: url(/images/hero/interface-mobile.png); */
+  }
+  .statistics {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
   .services-tab-title {
     font-size: 18px;
     padding: 12px;
@@ -146,7 +238,36 @@
     align-items: center;
   }
 }
+@media only screen and (max-width: 940px) {
+  .header-container-row {
+    max-width: 650px;
+  }
+  .header-nav-link {
+    padding: 6px 10px;
+    color: #020202;
+  }
+  .hero {
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+  }
+  .hero-images {
+    display: none;
+  }
+}
 @media only screen and (max-width: 900px) {
+  .hero {
+    padding: 140px 20px 80px;
+  }
+
+  .header-container-mobile {
+    display: flex;
+  }
+
+  .header-container {
+    display: none;
+  }
+
   .sections-title {
     padding-bottom: 20px;
   }
@@ -184,6 +305,51 @@
   }
 }
 @media only screen and (max-width: 665px) {
+  .mobile-hero {
+    display: block;
+  }
+  .hero-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+
+  .hero-button {
+    border-radius: 5px;
+  }
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .hero-button {
+    text-align: center;
+  }
+
+  .learnMore {
+    display: flex;
+    justify-content: center;
+  }
+
+  .statistics-block-title {
+    font-size: 24px;
+  }
+  .statistics-block-subtitle {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26.82px;
+    color: #020202;
+  }
+  .statistics-flex-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .statistics {
+    align-items: center;
+    padding-bottom: 0;
+  }
   .testimonials {
     padding: 100px 20px 100px;
   }
@@ -211,15 +377,15 @@
     display: none;
   }
 
-  .footer{
+  .footer {
     padding: 0 30px;
   }
 
-  .testimonial-slide-block{
+  .testimonial-slide-block {
     min-height: 300px;
   }
 
-  .portfolio-slide-block{
+  .portfolio-slide-block {
     min-height: 456px;
   }
 
@@ -245,6 +411,9 @@
 }
 
 @media only screen and (max-width: 450px) {
+  .mobile-hero {
+    display: block;
+  }
   .subTitleSections {
     font-size: 16px;
     line-height: 19px;
@@ -260,6 +429,19 @@
   .stage-subtitle {
     font-size: 16px;
     line-height: 20px;
+  }
+
+  .hero-title {
+    font-size: 38px;
+  }
+
+  .hero-subtitle {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .hero-text-info {
+    line-height: 25px;
   }
 
   .accordeon {
@@ -282,4 +464,7 @@
     border-radius: 0;
     border: 0;
   }
+}
+
+@media only screen and (max-width: 400px) {
 }

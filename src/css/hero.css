@@ -1,9 +1,28 @@
 .hero {
   max-width: 1340px;
   margin: 0 auto;
-  padding: 100px 20px;
+  padding: 170px 20px;
   display: flex;
+  gap: 20px;
   justify-content: space-between;
+}
+.mobile-hero{
+  display: none;
+}
+.uniq{
+  width: 310px;
+  height: 200px;
+  background-image: url(/images/hero/uniqueness.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.interface{
+  width: 260px;
+  height: 270px;
+  background-image: url(/images/hero/interface.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .hero-text {
@@ -68,6 +87,8 @@
   gap: 20px;
 }
 .hero-images-flex {
+  max-width: 530px;
+  justify-content: space-between;
   display: flex;
   gap: 10px;
 }

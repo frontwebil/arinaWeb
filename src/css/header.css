@@ -1,11 +1,24 @@
 .header {
-  border-bottom: 1px solid #51515133
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border-bottom: 1px solid #51515133;
+  background: #FAFAFA;
+  z-index: 5;
 }
 .header-container {
   max-width: 1340px;
   margin: 0 auto;
   padding: 20px;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-container-mobile{
+  max-width: 1340px;
+  margin: 0 auto;
+  padding: 20px;
+  display: none;
   align-items: center;
   justify-content: space-between;
 }
