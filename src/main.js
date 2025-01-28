@@ -543,6 +543,18 @@ AccordeonTopButton.forEach((el) => {
 document.addEventListener("DOMContentLoaded", function () {
   const burger = document.querySelector(".custom-burger");
   const menu = document.querySelector(".sliding-menu");
+  const links = document.querySelectorAll(".sliding-menu-link");
+
+  links.forEach((el) => {
+    el.addEventListener("click", () => {
+      burger.classList.toggle("active");
+      menu.classList.toggle("active");
+
+      document.body.style.overflow = menu.classList.contains("active")
+        ? "hidden"
+        : "";
+    });
+  });
 
   burger.addEventListener("click", function () {
     burger.classList.toggle("active");
