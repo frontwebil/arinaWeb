@@ -612,3 +612,34 @@ document.addEventListener("DOMContentLoaded", () => {
 
   observer.observe(blocksContainer);
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const blocks = document.querySelectorAll(".statistics-block");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const block = entry.target;
+          const delayClass = [...block.classList].find((cls) =>
+            cls.startsWith("delay-")
+          );
+          
+          // Витягуємо номер затримки з класу (наприклад, delay-1s -> 1)
+          const delay = delayClass ? parseInt(delayClass.split("-")[1]) : 0;
+
+          // Додаємо затримку перед додаванням класу `show`
+          setTimeout(() => {
+            block.classList.add("show");
+          }, delay * 10);
+
+          observer.unobserve(block); // Зупиняємо спостереження за цим блоком
+        }
+      });
+    },
+    { threshold: 0.2 } // Блок повинен бути на 20% в полі зору
+  );
+
+  // Додаємо всі блоки до спостереження
+  blocks.forEach((block) => observer.observe(block));
+});
