@@ -2,10 +2,10 @@ import { portfolioData } from "./jsData/portfolio.js";
 
 let SLIDES_PER_PAGE_PORTFOLIO = 3;
 const screenWidth = window.screen.width;
-if (screenWidth <= 1265) {
+if (screenWidth <= 1100) {
   SLIDES_PER_PAGE_PORTFOLIO = 2;
 }
-if (screenWidth <= 850) {
+if (screenWidth <= 600) {
   SLIDES_PER_PAGE_PORTFOLIO = 1;
 }
 
@@ -339,7 +339,7 @@ const reviews = [
   {
     image: "images/testimonials/10.png",
     name: "Даша",
-    text: "Ви гарно працюєте і дуже швидко, що дуже класно. Ставлю 5 зірок 😉 Якщо знайомим знадобляться послуги дизайнера, обовʼязково порекомендую вас🤗",
+    text: "Ви гарно працюєте і дуже швидко, що дуже класно. Ставлю 5 зірок 😉 Якщо знайомим знадобляться послуги дизайнера, обовʼязково порекомендую вас",
   },
   {
     image: "images/testimonials/11.png",
