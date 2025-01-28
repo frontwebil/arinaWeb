@@ -19,6 +19,10 @@
   transition: 0.3s all ease;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   background-color: #FAFAFA;
 }

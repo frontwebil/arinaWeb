@@ -4,7 +4,7 @@
   width: 100%;
   border-bottom: 1px solid #51515133;
   background: #fafafa;
-  /* z-index: 10; */
+  z-index: 10;
 }
 .header-container {
   max-width: 1340px;
