@@ -434,6 +434,9 @@
 }
 
 @media only screen and (max-width: 450px) {
+  .stages-titles {
+    padding-bottom: 0px;
+}
   .sliding-menu {
     top: 81px;
   }
@@ -449,7 +452,7 @@
     line-height: 19px;
   }
   .QA-container {
-    padding: 40px 15px;
+    padding: 40px 30px;
   }
 
   .stage-title {
